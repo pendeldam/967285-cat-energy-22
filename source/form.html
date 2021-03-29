@@ -32,16 +32,16 @@
             <legend class="visually-hidden">личные данные</legend>
             <ul class="form__personal-info-list">
               <li class="form__personal-info-item">
-                <label class="form__label-text" for="cat-name">Имя:<sup>&lowast;</sup></label>
-                <input class="form__input-text" type="text" name="name" id="cat-name" value="барсик" required>
+                <label class="form__label-name form__label" for="cat-name">Имя:<sup>&lowast;</sup></label>
+                <input class="form__input-name form__input" type="text" name="name" id="cat-name" value="барсик" required>
               </li>
               <li class="form__personal-info-item">
-                <label class="form__label-text" for="cat-weight">Вес (кг):<sup>&lowast;</sup></label>
-                <input class="form__input-text" type="number" name="weight" id="cat-weight" value="7" required>
+                <label class="form__label-weight form__label" for="cat-weight">Вес (кг):<sup>&lowast;</sup></label>
+                <input class="form__input-weight form__input" type="number" name="weight" id="cat-weight" value="7" required>
               </li>
               <li class="form__personal-info-item">
-                <label class="form__label-text" for="cat-age">Возраст (лет):</label>
-                <input class="form__input-text" type="number" name="age" id="cat-age" value="7">
+                <label class="form__label-age form__label" for="cat-age">Возраст (лет):</label>
+                <input class="form__input-age form__input" type="number" name="age" id="cat-age" value="7">
               </li>
             </ul>
           </fieldset>
@@ -49,16 +49,16 @@
             <legend class="visually-hidden">тип программы</legend>
             <ul class="form__type-list">
               <li class="form__type-item">
-                <input class="form__input-type" type="radio" name="type" value="weight-loss" id="type-weight-loss" checked>
-                <label class="form__label-type" for="type-weight-loss">Похудение</label>
+                <input class="form__input-type visually-hidden" type="radio" name="type" value="weight-loss" id="type-weight-loss" checked>
+                <label class="form__label-type form__label" for="type-weight-loss">Похудение</label>
               </li>
               <li class="form__type-item">
-                <input class="form__input-type" type="radio" name="type" value="weight-gain" id="type-weight-gain">
-                <label class="form__label-type" for="type-weight-gain">Набор массы</label>
+                <input class="form__input-type visually-hidden" type="radio" name="type" value="weight-gain" id="type-weight-gain">
+                <label class="form__label-type form__label" for="type-weight-gain">Набор массы</label>
               </li>
               <li class="form__type-item">
-                <input class="form__input-type" type="radio" name="type" value="unknown" id="type-unknown">
-                <label class="form__label-type" for="type-unknown">Не знаю (Нужен ваш совет)</label>
+                <input class="form__input-type visually-hidden" type="radio" name="type" value="unknown" id="type-unknown">
+                <label class="form__label-type form__label" for="type-unknown">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -66,43 +66,45 @@
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
             <ul class="form__owner-contacts-list">
               <li class="form__owner-contacts-item">
-                <label class="form__label-email form__label-text" for="owner-email">e-mail:<sup>&lowast;</sup></label>
-                <input class="form__input-email form__input-text" type="email" name="email" id="owner-email" value="kuklachev@gmail.com" required>
+                <label class="form__label-email form__label" for="owner-email">e-mail:<sup>&lowast;</sup></label>
+                <input class="form__input-email form__input" type="email" name="email" id="owner-email" value="kuklachev@gmail.com" required>
               </li>
               <li class="form__owner-contacts-item">
-                <label class="form__label-phone form__label-text" for="owner-phone">Телефон:<sup>&lowast;</sup></label>
-                <input class="form__input-phone form__input-text" type="tel" name="pnone" id="owner-phone" value="8 (960) 900-60-90" required>
+                <label class="form__label-phone form__label" for="owner-phone">Телефон:<sup>&lowast;</sup></label>
+                <input class="form__input-phone form__input" type="tel" name="pnone" id="owner-phone" value="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__comment">
             <legend class="form__legend">Комментарий</legend>
             <label class="visually-hidden" for="about-cat">текст комментария</label>
-            <textarea class="form__input-comment form__input-text" name="comment" id="about-cat" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__input-comment form__input" name="comment" id="about-cat" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__extra">
             <legend class="form__legend">Дополнительно</legend>
             <ul class="form__extra-list">
               <li class="form__extra-item">
-                <input class="form__input-extra" type="checkbox" name="sweetener" id="extra-sweetener" checked>
-                <label class="form__label-extra" for="extra-sweetener">Сахарозаменитель</label>
+                <input class="form__input-extra visually-hidden" type="checkbox" name="sweetener" id="extra-sweetener" checked>
+                <label class="form__label-extra form__label" for="extra-sweetener">Сахарозаменитель</label>
               </li>
               <li class="form__extra-item">
-                <input class="form__input-extra" type="checkbox" name="water" id="extra-water">
-                <label class="form__label-extra" for="extra-water">Питьевая вода</label>
+                <input class="form__input-extra visually-hidden" type="checkbox" name="water" id="extra-water">
+                <label class="form__label-extra form__label" for="extra-water">Питьевая вода</label>
               </li>
               <li class="form__extra-item">
-                <input class="form__input-extra" type="checkbox" name="milk" id="extra-milk">
-                <label class="form__label-extra" for="extra-milk">Молоко</label>
+                <input class="form__input-extra visually-hidden" type="checkbox" name="milk" id="extra-milk">
+                <label class="form__label-extra form__label" for="extra-milk">Молоко</label>
               </li>
               <li class="form__extra-item">
-                <input class="form__input-extra" type="checkbox" name="vitamins" id="extra-vitamins">
-                <label class="form__label-extra" for="extra-vitamins">Витамины</label>
+                <input class="form__input-extra visually-hidden" type="checkbox" name="vitamins" id="extra-vitamins">
+                <label class="form__label-extra form__label" for="extra-vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__mandatory-fields"><sup>&lowast;</sup>&nbsp;&mdash;&nbsp;Обязательные поля</p>
+          <div class="form__submit-wrapper">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <p class="form__mandatory-fields"><sup>&lowast;</sup>&nbsp;&mdash;&nbsp;Обязательные поля</p>
+          </div>
         </form>
       </div>
     </section>
