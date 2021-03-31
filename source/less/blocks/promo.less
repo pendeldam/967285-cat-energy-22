@@ -1,5 +1,4 @@
 .promo {
-  background: url("../../img/promo-background.jpg") no-repeat;
   position: relative;
 
   &::before {
@@ -7,8 +6,18 @@
     position: absolute;
     width: 320px;
     height: 302px;
+    background: url("../../img/promo-background.jpg") no-repeat;
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 302px;
     background: fade(@basic-green, 85%);
-    mix-blend-mode: normal;
+    z-index: -1;
+    top: 0;
   }
 }
 
