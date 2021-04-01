@@ -1,0 +1,30 @@
+.promo {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    background: url("../img/promo-background.jpg") no-repeat;
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    background: fade(@basic-green, 85%);
+    z-index: -1;
+    top: 0;
+  }
+}
+
+.promo__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: @basic-white;
+  text-transform: uppercase;
+}
