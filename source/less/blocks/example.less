@@ -1,6 +1,24 @@
 .example {
   font-family: "Oswald", "Arial", sans-serif;
   background-color: @special-light-grey;
+  margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.example__content {
+  display: grid;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 135px;
+  }
+}
+
+.example__stats {
+  display: grid;
 }
 
 .example__stat {
@@ -9,24 +27,121 @@
   font-weight: 400;
   color: @basic-black;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__intro {
   font-family: "Arial", sans-serif;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-.example__text {
+.example__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 366px;
+    grid-row: 1 / -1;
+  }
+}
+
+.example__item {
+  text-align: center;
+}
+
+.example__desc {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__expenses {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: @basic-black;
   text-transform: uppercase;
+  justify-self: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    text-align: end;
+    grid-row: 1 / -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row: 2;
+    flex-direction: row;
+    justify-self: start;
+    text-align: start;
+
+    span {
+      margin-left: 63px;
+    }
+  }
+}
+
+.example__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example__slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-self: center;
+}
+
+.example__slide {
+  display: none;
+}
+
+.example__slide--active {
+  display: block;
+}
+
+.example__controls {
+  justify-self: center;
+  display: flex;
+}
+
+.example__scale {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.example__input-range {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .example__button {
