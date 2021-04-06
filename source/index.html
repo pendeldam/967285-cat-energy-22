@@ -2,46 +2,49 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header wrapper">
-      <div class="page-header__top">
-        <a class="page-header__logo logo">
-          <img class="page-header__logo-image" src="img/logo.svg" width="191" height="38" alt="логотип">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button" aria-label="открыть меню">
-            <svg width="24" height="16" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
-              <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
-              <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
-            </svg>
-          </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="page-header__bottom">
-        <section class="promo">
-          <div class="promo__text">
-            <h1 class="promo__main-title main-title">Функциональное питание для котов</h1>
-            <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          </div>
-          <img class="promo__image" src="img/can-mobile.png" width="280" height="270" alt="car energy pro">
-          <a class="button promo__button button--mob-s button--tab-l" href="form.html">Подобрать программу</a>
-        </section>
+    <header class="page-header page-header--index">
+      <div class="wrapper">
+        <div class="page-header__top">
+          <a class="page-header__logo logo">
+            <img class="page-header__logo-image" src="img/logo.svg" width="191" height="38" alt="логотип">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button" aria-label="открыть меню">
+              <svg width="24" height="16" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+                <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+                <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+              </svg>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="page-header__bottom">
+          <section class="promo">
+            <div class="promo__text">
+              <h1 class="promo__main-title main-title">Функциональное питание для котов</h1>
+              <p class="promo__slogan">Занялся собой? Займись котом!</p>
+            </div>
+            <img class="promo__image" src="img/can-mobile.png" width="280" height="270" alt="car energy pro">
+            <a class="button promo__button button--mob-s button--tab-l" href="form.html">Подобрать программу</a>
+          </section>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -115,10 +118,12 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__content wrapper">
-          <h2 class="visually-hidden">Наш адрес</h2>
-          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул.&nbsp;Большая<br>Конюшенная,&nbsp;д.&nbsp;19/8<br><span>Санкт-Петербург</span></address>
+        <div class="contacts__wrapper wrapper">
+          <div class="contacts__content">
+            <h2 class="visually-hidden">Наш адрес</h2>
+            <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">ул.&nbsp;Большая<br>Конюшенная,&nbsp;д.&nbsp;19/8<br><span>Санкт-Петербург</span></address>
+          </div>
         </div>
         <img class="contacts__map" src="img/map.jpg" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>

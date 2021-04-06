@@ -2,37 +2,48 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo.svg" width="191" height="38" alt="логотип">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
+  <header class="page-header wrapper">
+    <div class="page-header__top">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo.svg" width="191" height="38" alt="логотип">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="открыть меню">
+          <svg width="24" height="16" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+          </svg>
+        </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="main-nav__item main-nav__item--active"><a>Подбор программы</a></li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Подбор программы</a>
+          </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
-    <section class="form-section">
-      <header class="form-section__header wrapper">
+    <section class="form-section wrapper">
+      <header class="form-section__header ">
         <h1 class="form-section__main-title main-title">Подбор программы</h1>
         <p class="form-section__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </header>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="form__personal-info">
+        <fieldset class="form__fieldset form__personal-info">
           <legend class="visually-hidden">личные данные</legend>
-          <ul class="form__list wrapper">
+          <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="cat-name">Имя:<sup>&lowast;</sup></label>
               <input class="form__input" type="text" name="name" id="cat-name" placeholder="барсик" required>
@@ -47,9 +58,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__type">
+        <fieldset class="form__fieldset form__type">
           <legend class="visually-hidden">тип программы</legend>
-          <ul class="form__list wrapper">
+          <ul class="form__list">
             <li class="form__item">
               <input class="form__input-radio visually-hidden" type="radio" name="type" value="weight-loss" id="type-weight-loss" checked>
               <label class="form__label-radio form__label" for="type-weight-loss">Похудение</label>
@@ -64,9 +75,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__owner-contacts">
+        <fieldset class="form__fieldset form__owner-contacts">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <ul class="form__list wrapper">
+          <ul class="form__list">
             <li class="form__item">
               <label class="form__label-email form__label" for="owner-email">e-mail:<sup>&lowast;</sup></label>
               <input class="form__input--icon form__input" type="email" name="email" id="owner-email" placeholder="kuklachev@gmail.com" required>
@@ -95,14 +106,14 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__comment">
+        <fieldset class="form__fieldset form__comment">
           <legend class="form__legend">Комментарий</legend>
           <label class="visually-hidden" for="about-cat">текст комментария</label>
-          <textarea class="form__input-comment form__input wrapper" name="comment" id="about-cat" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__input-comment form__input" name="comment" id="about-cat" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="form__extra">
+        <fieldset class="form__fieldset form__extra">
           <legend class="form__legend">Дополнительно</legend>
-          <ul class="form__list wrapper">
+          <ul class="form__list">
             <li class="form__item">
               <input class="form__input-checkbox visually-hidden" type="checkbox" name="sweetener" id="extra-sweetener" checked>
               <label class="form__label-checkbox form__label" for="extra-sweetener">Сахарозаменитель</label>
@@ -121,36 +132,37 @@
             </li>
           </ul>
         </fieldset>
-        <div class="form__submit-wrapper wrapper">
+        <div class="form__submit-wrapper">
           <button class="form__button button--tab-l button" type="submit">Отправить заявку</button>
           <p class="form__mandatory-fields"><sup>&lowast;</sup>&nbsp;&mdash;&nbsp;Обязательные поля</p>
         </div>
       </form>
     </section>
-    <section class="contacts">
-      <div class="wrapper">
+    <section class="contacts contacts--inner">
+      <div class="contacts__content wrapper">
         <h2 class="visually-hidden">Наш адрес</h2>
         <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="contacts__address">ул.&nbsp;Большая<br>Конюшенная,&nbsp;д.&nbsp;19/8<br><span>Санкт-Петербург</span></address>
       </div>
-      <img src="img/map.jpg" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="contacts__map" src="img/map.jpg" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="wrapper">
-      <a class="page-footer__logo logo" href="index.html">
+    <div class="page-footer__content wrapper">
+      <a class="page-footer__logo logo">
         <img src="img/logo-text.svg" width="128" height="24" alt="cat energy">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в контакте"></a>
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в контакте"><span>Мы в контакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.facebook.com/htmlacademy" aria-label="Мы в instagram"></a>
+            <a class="social__link social__link--instagram" href="https://www.facebook.com/htmlacademy" aria-label="Мы в instagram"><span>Мы в instagram</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy" aria-label="Мы в facebook"></a>
+            <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy" aria-label="Мы в facebook"><span>Мы в facebook</span></a>
           </li>
         </ul>
       </div>

@@ -1,18 +1,21 @@
 .plans {
   margin-top: 22px;
   margin-bottom: 27px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    row-gap: 30px;
+  }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
   }
 }
 
 .plans__item {
   background-color: @basic-grey;
-  margin-bottom: 20px;
   padding: 25px;
 
   @media (min-width: @tablet-width) {
@@ -20,15 +23,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 570px;
-    margin-bottom: 0;
     padding: 50px;
   }
-}
-
-.plans__item:last-child {
-  margin-bottom: 0;
-  margin-right: 0;
 }
 
 .plans__title {
