@@ -1,5 +1,30 @@
+.plans {
+  margin-top: 22px;
+  margin-bottom: 27px;
+  display: grid;
+  row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    row-gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+}
+
 .plans__item {
   background-color: @basic-grey;
+  padding: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px;
+  }
 }
 
 .plans__title {
@@ -9,6 +34,27 @@
   line-height: 37px;
   text-transform: uppercase;
   color: @basic-black;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.plans__text {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: @basic-black;
+    width: 60%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .plans__link {
@@ -17,4 +63,9 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

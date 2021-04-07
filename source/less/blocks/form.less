@@ -2,10 +2,33 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .form__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form__item:last-child {
+  margin-bottom: 0;
 }
 
 .form__legend {
@@ -14,6 +37,17 @@
   line-height: 26px;
   color: @basic-black;
   text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form__type,
+.form__personal-info {
+  border-bottom: 1px solid @basic-light-grey;
+  padding-bottom: 20px;
 }
 
 .form__input {
@@ -21,13 +55,25 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  padding: 12px;
   text-transform: uppercase;
   color: @special-dark-grey;
+  flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 9px 19px;
+  }
 }
 
 .form__input::placeholder {
   color: @transparent-dark-grey;
   opacity: 1;
+}
+
+.form__label {
+  margin-right: 10px;
 }
 
 .form__label-radio {
@@ -43,4 +89,20 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.form__button {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
