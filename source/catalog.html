@@ -8,21 +8,25 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo.svg" width="191" height="38" alt="логотип">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
+    <div class="page-header__top wrapper">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo.svg" width="191" height="38" alt="логотип">
+      </a>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button" aria-label="открыть меню"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item main-nav__item--active"><a>Каталог продукции</a></li>
-          <li class="main-nav__item"><a href="form.html">Подбор программы</a></li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <section class="catalog">
@@ -221,5 +225,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
   </body>
 </html>
