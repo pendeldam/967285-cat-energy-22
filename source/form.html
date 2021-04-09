@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page page__no-js" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.remove(`page__no-js`);</script>
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -32,7 +33,7 @@
     <section class="form-section wrapper">
       <header class="form-section__header ">
         <h1 class="form-section__main-title main-title">Подбор программы</h1>
-        <p class="form-section__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="form-section__intro">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       </header>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form__wrapper">
@@ -149,7 +150,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__content wrapper">
-      <a class="page-footer__logo logo">
+      <a class="page-footer__logo logo" href="index.html">
         <img src="img/logo-text.svg" width="128" height="24" alt="cat energy">
       </a>
       <div class="page-footer__social social">

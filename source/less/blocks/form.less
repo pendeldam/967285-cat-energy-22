@@ -80,6 +80,11 @@
 
 .form__input-comment {
   width: 100%;
+  height: 150px;
+
+  @media (min-width: @tablet-width) {
+    height: 174px;
+  }
 }
 
 .form__input::placeholder {
@@ -127,22 +132,34 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 123px;
+    column-gap: 60px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 104px;
+    column-gap: 80px;
   }
 }
 
 .form__submit-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
+  row-gap: 20px;
+  margin-top: 34px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    align-items: center;
+    margin-top: 54px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 80px;
+    margin-top: 60px;
+    margin-bottom: 82px;
   }
 }
 
@@ -151,25 +168,18 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+  margin: 0;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
-    margin-left: 61px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 81px;
   }
 }
 
 .form__button {
-  width: 280px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     padding: 16px 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 568px;
   }
 }
