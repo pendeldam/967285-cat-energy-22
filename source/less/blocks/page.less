@@ -7,8 +7,10 @@
 }
 
 .page__no-js .page-header--index::after {
-  top: unset;
-  bottom: 174px;
+  @media (max-width: 767px) {
+    top: unset;
+    bottom: 174px;
+  }
 }
 
 .page__no-js .page-header__top {
