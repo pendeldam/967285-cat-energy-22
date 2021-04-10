@@ -38,6 +38,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px 17px;
+    max-width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
   }
 }
 
@@ -45,12 +51,12 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    max-width: 708px;
+    max-width: @tablet-width;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1220px;
+    max-width: @desktop-width;
     margin: 0 auto;
   }
 
