@@ -1,10 +1,12 @@
 .main-nav__toggle {
-  position: relative;
+  position: absolute;
+  top: 25px;
+  right: 20px;
   border: none;
-  padding: 0;
   display: block;
   width: 24px;
   height: 18px;
+  padding: 0;
   background-color: transparent;
   cursor: pointer;
   outline: transparent;
@@ -70,12 +72,8 @@
 .main-nav--opened .main-nav__list {
   @media (max-width: @mobile-width) {
     background-color: white;
-    position: absolute;
     display: block;
     width: 100%;
-    min-height: 44vh;
-    top: 69px;
-    left: 0;
     z-index: 1;
   }
 }
