@@ -1,14 +1,37 @@
 .form-section {
   @media (min-width: @tablet-width) {
     padding: 0 70px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 30px;
   }
 }
 
 .form-section__header {
+  display: grid;
+  grid-template-columns: 1fr;
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.form-section__main-title {
+  margin-top: 27px;
+  margin-bottom: 37px;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 75px;
+    margin-bottom: 55px;
   }
 }
 
@@ -16,11 +39,15 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: @basic-black;
   text-transform: uppercase;
-  width: 226px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: 323px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }

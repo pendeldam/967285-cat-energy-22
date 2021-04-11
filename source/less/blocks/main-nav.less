@@ -1,17 +1,62 @@
 .main-nav__toggle {
+  position: absolute;
+  top: 25px;
+  right: 20px;
   border: none;
-  padding: 0;
+  display: block;
   width: 24px;
-  height: 16px;
+  height: 18px;
+  padding: 0;
   background-color: transparent;
   cursor: pointer;
+  outline: transparent;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: -0;
+  left: -0;
+  width: 24px;
+  height: 2px;
+  background-color: @basic-black;
+  box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 24px;
+    height: 2px;
+    background-color: @basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav__list {
-  display: none;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (max-width: @mobile-width) {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     width: 440px;
@@ -24,9 +69,22 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav__toggle {
-    display: none;
+.main-nav--opened .main-nav__list {
+  @media (max-width: @mobile-width) {
+    background-color: white;
+    display: block;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.main-nav__item {
+  @media (max-width: @mobile-width) {
+    border-top: 1px solid @special-grey;
+
+    &:last-child {
+      border-bottom: 1px solid @special-grey;
+    }
   }
 }
 
@@ -39,6 +97,12 @@
   color: @basic-black;
   text-transform: uppercase;
 
+  @media (max-width: @mobile-width) {
+    display: block;
+    text-align: center;
+    padding: 22px 20px 24px;
+  }
+
   @media (min-width: @tablet-width) {
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
@@ -49,6 +113,11 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.main-nav__link--index {
+  @media (min-width: @desktop-width) {
     color: @basic-white;
   }
 }
