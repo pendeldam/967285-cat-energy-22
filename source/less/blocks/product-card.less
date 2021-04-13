@@ -1,10 +1,19 @@
 .product-card {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr auto;
-  padding: 20px 20px 25px;
-  position: relative;
-  border-bottom: 1px solid @extra-light-grey;
+  padding: 20px 0 25px;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: @extra-light-grey;
+  }
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr;
@@ -20,6 +29,10 @@
       height: 430px;
       background-color: @basic-grey;
       z-index: -1;
+    }
+
+    &::after {
+      content: none;
     }
   }
 }
