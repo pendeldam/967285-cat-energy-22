@@ -11,10 +11,13 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
+    margin-top: 82px;
+    margin-bottom: 70px;
   }
 }
 
 .plans__item {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: @basic-grey;
@@ -38,6 +41,7 @@
 
   &--weight-loss::before,
   &--weight-gain::before {
+    position: absolute;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -49,10 +53,7 @@
     @media (min-width: @tablet-width) {
       grid-column-start: 2;
       grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: -1;
       justify-self: center;
-      align-self: center;
     }
   }
 
@@ -125,7 +126,7 @@
 .plans__text {
   position: relative;
   margin: 0;
-  padding-top: 30px ;
+  padding-top: 30px;
   padding-bottom: 23px;
   grid-column-start: 1;
   grid-column-end: -1;
