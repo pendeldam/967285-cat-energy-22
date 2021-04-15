@@ -89,22 +89,21 @@
               <p class="example__expenses">Затраты на питание:<span>15 000 руб.</span></p>
             </div>
           </div>
-          <div class="example__slider">
-            <ul class="example__slider-list">
-              <li class="example__slide example__slide--active">
-                <img src="img/example-before-mobile.png" width="311" height="232" alt="было">
-              </li>
-              <li class="example__slide">
-                <img src="img/example-after-mobile.png" width="251" height="240" alt="стало">
-              </li>
-            </ul>
-            <div class="example__controls">
-              <button class="example__button">Было</button>
-              <input class="example__input-range" type="range" name="weight-change" id="slider-weight-change" aria-label="результаты диеты">
-              <div class="example__scale">
-                <div class="example__toggler"></div>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__slide slider__image-before slider__slide--active">
+                <img src="img/slider-before.png" width="311" height="232" alt="кот в начале диеты">
               </div>
-              <button class="example__button">Стало</button>
+              <div class="slider__slide slider__image-after">
+                <div class="slider__slide-wrapper">
+                  <img src="img/slider-after.png" width="251" height="240" alt="кот после диеты">
+                </div>
+              </div>
+            </div>
+            <div class="slider__controls">
+              <button class="slider__button" data-type="before">Было</button>
+              <input class="slider__input-range" type="range" name="weight-change" id="slider-weight-change" aria-label="результаты диеты">
+              <button class="slider__button" data-type="after">Стало</button>
             </div>
           </div>
         </div>
@@ -146,5 +145,6 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
