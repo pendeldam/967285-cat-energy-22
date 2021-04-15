@@ -30,7 +30,6 @@
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 20px;
-  position: relative;
 
   &::before {
     content: "";
@@ -89,8 +88,6 @@
       font-family: "Oswald", "Arial", sans-serif;
       grid-column-start: 2;
       grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: -1;
     }
 
     &--leaf::after {
@@ -119,6 +116,12 @@
       grid-column-end: initial;
       right: 0;
     }
+
+    &::after {
+      margin-left: 0;
+      grid-column-end: -1;
+      justify-self: end;
+    }
   }
 }
 
@@ -133,5 +136,13 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+  }
+}
+
+.features__text br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
