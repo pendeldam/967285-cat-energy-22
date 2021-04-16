@@ -1,22 +1,27 @@
 .slider {
   display: grid;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
-    min-height: 620px;
     background: linear-gradient(to bottom, @basic-white, @basic-white 200px, @basic-grey 201px);
+    padding-bottom: 35px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 4;
     grid-column-end: -1;
+    padding-bottom: 65px;
   }
 }
 
-.slider__wrapper {
+.slider__content {
+  width: 320px;
   height: 240px;
+  margin: 0 auto;
   position: relative;
 
   @media (min-width: @tablet-width) {
+    width: 100%;
     height: 620px;
   }
 }
@@ -31,6 +36,7 @@
   top: 0;
   display: block;
   height: 100%;
+  object-fit: contain;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -38,7 +44,6 @@
 }
 
 .slider__image-before {
-  width: 100%;
   height: 100%;
 }
 
@@ -51,8 +56,8 @@
   overflow: visible;
   background-color: @special-light-grey;
 
-  @media (min-width: @desktop-width) {
-    background: linear-gradient(to bottom, @basic-white, @basic-white 200px, @basic-grey 201px);
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(to bottom, @basic-white, @basic-white 200px, @special-light-grey 201px);
   }
 }
 
@@ -68,6 +73,8 @@
 
 .slider__controls {
   justify-self: center;
+  padding: 9px 0;
+  margin-top: 23px;
 }
 
 /* .slider__input-range {
