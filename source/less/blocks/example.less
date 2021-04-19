@@ -6,11 +6,11 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    background-color: transparent;
+    background: linear-gradient(to bottom, #ffffff, #ffffff 592px, #eaeaea 200px);
   }
 
   @media (min-width: @desktop-width) {
-    background: linear-gradient(to bottom, @basic-white, @basic-white 200px, @basic-grey 201px);
+    background: linear-gradient(to bottom, @basic-white, @basic-white 225px, @basic-grey 225px);
   }
 }
 
@@ -48,13 +48,27 @@
   margin: 0;
   margin-bottom: 25px;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 55px;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    margin: 70px 0;
+    width: 436px;
+    margin: 130px 0 70px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -65,7 +79,14 @@
   margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, min-content) 1fr;
     column-gap: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -76,6 +97,10 @@
   text-align: center;
   border: 1px solid @basic-dark-grey;
   border-radius: 3px;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+  }
 }
 
 .example__stat-value {
@@ -132,15 +157,23 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    width: 174px;
     margin-top: 0;
+    justify-self: end;
+    text-align: end;
+    grid-column-start: -1;
+    grid-column-end: -2;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 60px;
+    margin-top: 120px;
     justify-self: start;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: max-content;
 
-    span {
-      margin-left: 63px;
+    & span:first-child {
+      margin-right: 63px;
     }
   }
 }
