@@ -1,6 +1,5 @@
 .page-footer {
   background-color: @basic-grey;
-  padding-top: 40px;
 
   @media (min-width: @tablet-width) {
     padding: 55px 0 60px;
@@ -18,13 +17,23 @@
   }
 }
 
+.page-footer__logo {
+  padding: 40px 0 32px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__copyright {
+  padding: 22px 0;
+  width: 100%;
+
   @media (min-width: @tablet-width) {
-    width: 163px;
+    width: 210px;
   }
 }
 
 .page-footer__copyright a {
-  display: flex;
-  align-items: center;
+  justify-content: space-between;
 }

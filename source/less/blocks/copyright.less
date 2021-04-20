@@ -1,4 +1,18 @@
 .copyright a {
   font-size: 16px;
   color: inherit;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: @basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover path {
+    stroke: @basic-green;
+  }
 }

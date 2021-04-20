@@ -41,6 +41,7 @@
 
 .slider__image-before {
   height: 100%;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     img {
@@ -77,11 +78,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: calc(100% + 174px);
-    background: linear-gradient(to bottom, @basic-white, @basic-white 226px, @special-light-grey 226px);
-
     img {
       right: 0;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      display: block;
+      width: 100vw;
+      height: calc(100% + 174px);
+      background: linear-gradient(to bottom, @basic-white, @basic-white 226px, @special-light-grey 226px);
     }
   }
 }

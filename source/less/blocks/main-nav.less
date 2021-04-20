@@ -79,6 +79,18 @@
 }
 
 .main-nav__item {
+  @media (min-width: @tablet-width) {
+    &--active {
+      border-bottom: 2px solid @basic-green;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .page-header--index &--active {
+      border-bottom: 2px solid @basic-white;
+    }
+  }
+
   @media (max-width: @mobile-width) {
     border-top: 1px solid @special-grey;
 
@@ -96,6 +108,8 @@
   line-height: 20px;
   color: @basic-black;
   text-transform: uppercase;
+  display: inline-block;
+  padding: 8px 0;
 
   @media (max-width: @mobile-width) {
     display: block;
@@ -113,6 +127,14 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
