@@ -11,7 +11,11 @@
     <header class="page-header page-header--index">
       <div class="page-header__top">
         <a class="page-header__logo logo">
-          <img class="page-header__logo-image" src="img/logo.svg" width="191" height="38" alt="логотип">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo.svg" width="191" height="38" alt="логотип">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button" aria-label="открыть меню"></button>
