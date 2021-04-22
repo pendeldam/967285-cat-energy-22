@@ -86,7 +86,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    .page-header--index &--active {
+    &--index {
       border-bottom: 2px solid @basic-white;
     }
   }
@@ -141,5 +141,15 @@
 .main-nav__link--index {
   @media (min-width: @desktop-width) {
     color: @basic-white;
+  }
+}
+
+.no-js .main-nav__toggle {
+  display: none;
+}
+
+.no-js .main-nav__list {
+  @media (max-width: 767px) {
+    display: block;
   }
 }

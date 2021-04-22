@@ -1,6 +1,8 @@
 const mainNav = document.querySelector(`.main-nav`);
 const mainNavToggle = mainNav.querySelector(`.main-nav__toggle`);
 
+mainNav.classList.remove(`no-js`);
+
 mainNavToggle.addEventListener(`click`, (evt) => {
   evt.preventDefault();
 
