@@ -10,8 +10,7 @@
   @media (min-width: @desktop-width) {
     grid-column-start: 4;
     grid-column-end: -1;
-    padding-bottom: 65px;
-    background: linear-gradient(to bottom, @basic-white, @basic-white 225px, @basic-grey 201px);
+    padding-bottom: 77px;
   }
 }
 
@@ -23,6 +22,10 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     height: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 38px;
   }
 }
 
@@ -70,7 +73,7 @@
 
   @media (min-width: @tablet-width) {
     width: 50%;
-    background: linear-gradient(to bottom, @basic-white, @basic-white 190px, @special-light-grey 190px);
+    background: linear-gradient(to bottom, @basic-white, @basic-white 190px, @special-light-grey 191px);
 
     img {
       right: 28px;
@@ -79,7 +82,7 @@
 
   @media (min-width: @desktop-width) {
     img {
-      right: 0;
+      right: 10px;
     }
 
     &::before {
@@ -89,7 +92,7 @@
       display: block;
       width: 100vw;
       height: calc(100% + 174px);
-      background: linear-gradient(to bottom, @basic-white, @basic-white 226px, @special-light-grey 226px);
+      background: linear-gradient(to bottom, @basic-white, @basic-white 190px, @special-light-grey 191px);
     }
   }
 }
@@ -103,8 +106,15 @@
 .slider__controls {
   z-index: 1;
   justify-self: center;
-  padding: 9px 0;
-  margin-top: 60px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 37px;
+    margin-left: 80px;
+  }
 }
 
 .slider__input-range {
@@ -134,15 +144,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 428px;
+    width: 465px;
 
     &::-webkit-slider-thumb {
       cursor: pointer;
       position: relative;
       bottom: 15px;
-      width: 34px;
-      height: 34px;
-      border: 12px solid @basic-white;
+      width: 30px;
+      height: 30px;
+      border: 11px solid @basic-white;
       border-radius: 50%;
       outline: none;
       background-color: @basic-green;
