@@ -1,6 +1,10 @@
 .features {
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 55px;
+  }
+
   &::after {
     @media (min-width: @tablet-width) {
       position: absolute;
@@ -19,17 +23,16 @@
 }
 
 .features__title {
-  padding-top: 27px;
-  padding-bottom: 38px;
+  padding-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 45px;
+    padding-top: 18px;
     padding-bottom: 32px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 22px;
-    padding-bottom: 68px;
+    padding-top: 0;
+    padding-bottom: 74px;
   }
 }
 
@@ -43,7 +46,8 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 60px 1fr 60px 1fr 60px 1fr;
-    row-gap: 37px;
+    row-gap: 80px;
+    margin-top: 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -84,7 +88,7 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 60px 1fr;
     grid-template-rows: 110px 1fr;
-    min-height: 257px;
+    min-height: 235px;
 
     &:first-child,
     &:nth-child(3) {
