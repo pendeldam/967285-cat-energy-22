@@ -7,7 +7,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     padding-left: 80px;
   }
 
@@ -78,17 +78,17 @@
 .promo__image {
   z-index: 1;
   justify-self: center;
-  position: relative;
 
   @media (min-width: @tablet-width) {
     order: 4;
+    position: absolute;
     bottom: 60px;
     right: 60px;
   }
 
   @media (min-width: @desktop-width) {
     order: 0;
-    right: 200px;
+    right: 250px;
     top: 8px;
   }
 }
