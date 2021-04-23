@@ -2,10 +2,6 @@
   position: relative;
   display: grid;
 
-  @media (min-width: @tablet-width) {
-    padding-left: 120px;
-  }
-
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr;
     padding-left: 80px;
@@ -31,10 +27,12 @@
 
   @media (min-width: @tablet-width) {
     justify-self: start;
+    margin-left: 90px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 30px;
+    margin-left: 0;
   }
 }
 
@@ -81,13 +79,14 @@
 
   @media (min-width: @tablet-width) {
     order: 4;
-    position: absolute;
-    bottom: 60px;
-    right: 60px;
+    height: 530px;
+    position: relative;
+    bottom: 82px;
   }
 
   @media (min-width: @desktop-width) {
     order: 0;
+    position: absolute;
     right: 250px;
     top: 8px;
   }
@@ -96,6 +95,7 @@
 .promo__button {
   @media (min-width: @tablet-width) {
     width: 244px;
+    margin-left: 85px;
     z-index: 1;
   }
 

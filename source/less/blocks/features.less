@@ -7,7 +7,7 @@
       content: "";
       width: calc(100% + 20px);
       height: 1px;
-      bottom: 0;
+      bottom: -50px;
       left: -20px;
       background-color: @special-grey;
     }
@@ -16,14 +16,22 @@
       content: none;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .features__title {
   padding-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 18px;
-    padding-bottom: 32px;
+    padding-top: 3px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {

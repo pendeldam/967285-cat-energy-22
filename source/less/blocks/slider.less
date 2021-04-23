@@ -22,10 +22,12 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     height: 520px;
+    top: 42px;
     left: 11px;
   }
 
   @media (min-width: @desktop-width) {
+    top: initial;
     bottom: 40px;
     left: 38px;
   }
@@ -36,7 +38,7 @@
   overflow: hidden;
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -10px;
   display: block;
 
   @media (min-width: @tablet-width) {
@@ -77,11 +79,11 @@
 
   @media (min-width: @tablet-width) {
     width: 50%;
-    background: linear-gradient(to bottom, @basic-white, @basic-white 170px, @special-light-grey 171px);
+    background: linear-gradient(to bottom, @basic-white, @basic-white 182px, @special-light-grey 182px);
 
     img {
       width: 545px;
-      right: 28px;
+      right: 65px;
     }
   }
 
@@ -111,7 +113,7 @@
 .slider__controls {
   z-index: 1;
   justify-self: center;
-  margin-top: 30px;
+  margin-top: 26px;
 
   @media (min-width: @tablet-width) {
     margin-top: 60px;
