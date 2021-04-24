@@ -19,11 +19,8 @@
 }
 
 .plans__item {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  padding-bottom: 22px;
-  padding-right: 30px;
+  padding: 30px 30px 22px 20px;
   background-color: @basic-grey;
 
 
@@ -32,7 +29,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 43px 50px 60px;
+    padding: 78px 50px 60px;
   }
 
   &--weight-loss::before,
@@ -98,8 +95,8 @@
   text-transform: uppercase;
   color: @basic-black;
   margin: 0;
-  margin-top: 30px;
-  margin-left: 91px;
+  margin-bottom: 30px;
+  margin-left: 68px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -109,7 +106,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 32px;
+    margin-bottom: 70px;
     margin-left: 165px;
   }
 }
@@ -117,22 +114,11 @@
 .plans__text {
   position: relative;
   margin: 0;
-  padding-top: 30px;
   padding-bottom: 22px;
-  padding-left: 20px;
+  border-bottom: 1px solid @basic-light-grey;
 
   br {
     display: none;
-  }
-
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: @basic-light-grey;
   }
 
   @media (min-width: @tablet-width) {
@@ -140,19 +126,14 @@
     line-height: 24px;
     color: @basic-black;
     padding-left: 0;
+    border-bottom: none;
 
     br {
       display: block;
     }
-
-    &::after {
-      content: none;
-    }
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 47px;
-
     br {
       display: none;
     }
@@ -160,6 +141,7 @@
 }
 
 .plans__link {
+  display: block;
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -167,7 +149,6 @@
   text-transform: uppercase;
   color: @basic-black;
   margin-top: 20px;
-  padding-left: 20px;
   padding-right: 40px;
   width: max-content;
 
@@ -204,7 +185,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 3px;
+    margin-top: 8px;
   }
 
   &:active {
