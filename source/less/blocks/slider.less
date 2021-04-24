@@ -1,0 +1,219 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    padding-bottom: 65px;
+  }
+}
+
+.slider__content {
+  position: relative;
+  width: 280px;
+  height: 240px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 520px;
+    top: 42px;
+    left: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: initial;
+    bottom: 40px;
+    left: 38px;
+  }
+}
+
+.slider__slide img {
+  max-width: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: -13px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    height: 520px;
+  }
+}
+
+.slider__image-before {
+  height: 100%;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    img {
+      width: 677px;
+      height: 520px;
+      left: 7px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    img {
+      left: -40px;
+    }
+  }
+}
+
+.slider__image-after {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: visible;
+  background-color: @special-light-grey;
+
+  img {
+    right: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    background: linear-gradient(to bottom, @basic-white, @basic-white 182px, @special-light-grey 182px);
+
+    img {
+      width: 545px;
+      right: 65px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    img {
+      right: 52px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      display: block;
+      width: 100vw;
+      height: calc(100% + 174px);
+      background: linear-gradient(to bottom, @basic-white, @basic-white 197px, @special-light-grey 198px);
+    }
+  }
+}
+
+.slider__after-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider__controls {
+  z-index: 1;
+  justify-self: center;
+  margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-left: 80px;
+  }
+}
+
+.slider__input-range {
+  appearance: none;
+  width: 105px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  outline: none;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 28px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: @basic-green;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 84px;
+    height: 14px;
+    margin: 0 10px;
+    padding: 3px;
+    border-radius: 50px;
+    background-color: @basic-white;
+    border: 1px solid @basic-dark-grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 465px;
+
+    &::-webkit-slider-thumb {
+      cursor: pointer;
+      position: relative;
+      bottom: 15px;
+      width: 30px;
+      height: 30px;
+      border: 11px solid @basic-white;
+      border-radius: 50%;
+      outline: none;
+      background-color: @basic-green;
+      box-shadow: 0 0 1px @basic-dark-grey, 0 3px 5px @basic-dark-grey;
+    }
+
+    &::-webkit-slider-thumb:hover {
+      box-shadow: 0 0 1px @basic-dark-grey, 0 5px 5px @basic-dark-grey;
+    }
+
+    &::-webkit-slider-thumb:active {
+      box-shadow: 0 0 1px @basic-green, 0 7px 5px @basic-dark-grey;
+    }
+
+    &::-webkit-slider-runnable-track {
+      margin: 0 20px;
+      width: 100%;
+      height: 6px;
+      border-radius: 6px;
+      background-color: @extra-dark-grey;
+    }
+  }
+}
+
+.slider__button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: @basic-black;
+  background-color: transparent;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted @special-darkest-grey;
+
+    &:hover {
+      border-bottom: 1px solid @special-darkest-grey;
+    }
+
+    &:active {
+      outline: none;
+      border: none;
+    }
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+}
