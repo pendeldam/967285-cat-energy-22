@@ -78,10 +78,10 @@
 }
 
 .form__owner-contacts .form__list {
-  margin-top: 54px;
+  margin-top: 34px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 85px;
+    margin-top: 78px;
     margin-bottom: 70px;
   }
 }
@@ -138,31 +138,24 @@
 
 .form__legend {
   position: relative;
+  display: inline-block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   padding-top: 25px;
-  margin-bottom: 32px;
   color: @basic-black;
   text-transform: none;
-  width: 100%;
+  width: auto;
 
   &::after {
     position: absolute;
     content: "";
-    width: 100%;
+    width: 100vw;
     height: 2px;
     top: 40px;
-    left: 20px;
+    left: calc(100% + 20px);
     background-color: @basic-green;
     z-index: -1;
-  }
-
-  span {
-    position: absolute;
-    display: inline-block;
-    background-color: @basic-white;
-    padding-right: 20px;
   }
 
   @media (min-width: @tablet-width) {
@@ -174,7 +167,7 @@
       position: absolute;
       content: "";
       top: 23px;
-      right: -70px;
+      right: calc(100% + 40px);
       width: 100vw;
       height: 2px;
       background-color: @basic-green;
@@ -183,24 +176,12 @@
 
     &::after {
       top: 23px;
-      left: -70px;
+      left: calc(100% + 40px);
       width: 100vw;
-    }
-
-    span {
-      left: -40px;
-      padding-left: 40px;
-      padding-right: 40px;
     }
 
     br {
       display: none;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &::before {
-      right: -110px;
     }
   }
 }
@@ -371,7 +352,7 @@
 }
 
 .form__extra .form__list {
-  margin-top: 25px;
+  margin-top: 38px;
 
   @media (min-width: @tablet-width) {
     display: grid;
