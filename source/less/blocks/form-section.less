@@ -1,7 +1,6 @@
 .form-section {
   @media (min-width: @tablet-width) {
     padding: 0 70px;
-    padding-bottom: 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,13 +23,18 @@
 }
 
 .form-section__main-title {
-  margin-top: 27px;
-  margin-bottom: 37px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 40px;
+    margin-bottom: 55px;
+  }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-top: 75px;
+    margin-top: 55px;
     margin-bottom: 55px;
   }
 }
@@ -40,10 +44,12 @@
   color: @basic-black;
   text-transform: uppercase;
   margin: 0;
+  width: 266px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    width: 323px;
   }
 
   @media (min-width: @desktop-width) {
