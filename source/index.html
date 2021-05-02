@@ -4,6 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Cat Energy">
+    <meta name="application-name" content="Cat Energy">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -38,9 +48,9 @@
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
           </div>
           <picture class="promo__image">
-            <source media="(min-width: 1280px)" srcset="img/can-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/can-tablet.jpg">
-            <img src="img/can-mobile.png" alt="car energy pro">
+            <source media="(min-width: 1280px)" srcset="img/can-desktop.png 1x, img/can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/can-tablet.jpg 1x, img/can-tablet@2x.jpg 2x">
+            <img src="img/can-mobile.png" srcset="img/can-mobile@2x.png 2x" alt="car energy pro">
           </picture>
           <a class="button promo__button button--mob-s button--tab-l" href="form.html">Подобрать программу</a>
         </section>
@@ -101,15 +111,15 @@
             <div class="slider__content">
               <div class="slider__slide slider__image-before">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/slider-before-large.png">
-                  <img src="img/slider-before-small.png" width="311" height="232" alt="кот в начале диеты">
+                  <source media="(min-width: 768px)" srcset="img/slider-before-large.png 1x, img/slider-before-large@2x.png 2x">
+                  <img src="img/slider-before-small.png" srcset="img/slider-before-small@2x.png 2x" width="311" height="232" alt="кот в начале диеты">
                 </picture>
               </div>
               <div class="slider__slide slider__image-after">
                 <div class="slider__after-wrapper">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/slider-after-large.png">
-                    <img src="img/slider-after-small.png" width="251" height="240" alt="кот после диеты">
+                    <source media="(min-width: 768px)" srcset="img/slider-after-large.png 1x, img/slider-after-large@2x.png 2x">
+                    <img src="img/slider-after-small.png" srcset="img/slider-after-small@2x.png 2x" width="251" height="240" alt="кот после диеты">
                   </picture>
                 </div>
               </div>
@@ -133,9 +143,9 @@
           </div>
         </div>
         <picture>
-          <source media="(min-width: 1280px)" srcset="img/map-desktop.jpg">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
-          <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <source media="(min-width: 1280px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="contacts__map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
       </section>
     </main>
