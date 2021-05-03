@@ -204,7 +204,12 @@
   align-items: center;
   background-image: url("../img/bonus-background-sm.jpg");
   background-color: @basic-green;
+  background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bonus-background-sm@2x.jpg");
+  }
 
   svg {
     margin-bottom: 50px;
@@ -219,6 +224,10 @@
     justify-content: space-between;
     background-image: url("../img/bonus-background-lg.jpg");
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bonus-background-lg@2x.jpg");
+    }
+
     svg {
       margin-bottom: 11px;
     }
@@ -230,6 +239,11 @@
     margin: 0;
     flex-direction: column;
     background-image: url("../img/bonus-background-sm.jpg");
+    background-position: initial;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bonus-background-sm@2x.jpg");
+    }
 
     svg {
       margin-top: 58px;
