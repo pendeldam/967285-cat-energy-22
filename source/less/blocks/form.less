@@ -225,7 +225,7 @@
   resize: none;
   width: 100%;
   height: 150px;
-  margin-top: 27px;
+  margin-top: 32px;
 
   @media (min-width: @tablet-width) {
     height: 174px;
@@ -264,15 +264,17 @@
 .form__label-phone > svg {
   position: absolute;
   right: 15px;
-
-  @media (min-width: @tablet-width) {
-    right: 20px;
-  }
 }
 
 .form__label-email > input,
 .form__label-phone > input {
   margin-left: 15px;
+}
+
+.form__label-phone > input {
+  @media (min-width: @tablet-width) {
+    padding-left: 13px;
+  }
 }
 
 .form__label-radio {
@@ -352,7 +354,7 @@
 }
 
 .form__extra .form__list {
-  margin-top: 38px;
+  margin-top: 32px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -384,7 +386,8 @@
 
   @media (min-width: @desktop-width) {
     column-gap: 80px;
-    margin-top: 37px;
+    margin-top: 30px;
+    margin-bottom: 80px;
   }
 }
 
