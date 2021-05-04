@@ -22,7 +22,7 @@
   color: @basic-black;
   width: auto;
   margin: 0;
-  padding: 25px 0 36px;
+  padding: 26px 0 36px;
   display: inline-block;
 
   &::after {
@@ -63,13 +63,16 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin-top: 80px;
+    margin-top: 74px;
+    margin-bottom: 84px;
 
     &::before {
+      top: 25px;
       right: calc(100% + 40px);
     }
 
     &::after {
+      top: 25px;
       left: calc(100% + 34px);
     }
   }
@@ -88,7 +91,7 @@
 .extra-goods__item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 13px 0 20px;
+  padding: 13px 0 19px;
   border-top: 1px solid @basic-dark-grey;
 
   &:last-child {
@@ -102,7 +105,7 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 80px 1fr 80px 1fr;
-    padding: 14px 0 16px 0;
+    padding: 14px 0 18px 0;
     align-items: center;
   }
 }
@@ -197,14 +200,20 @@
 
 .extra__bonus {
   min-height: 289px;
-  margin: 40px 0 20px;
+  margin: 40px 0 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("../img/bonus-background-sm.jpg");
   background-color: @basic-green;
+  background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bonus-background-sm@2x.jpg");
+    background-size: contain;
+  }
 
   svg {
     margin-bottom: 50px;
@@ -219,6 +228,11 @@
     justify-content: space-between;
     background-image: url("../img/bonus-background-lg.jpg");
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bonus-background-lg@2x.jpg");
+      background-size: contain;
+    }
+
     svg {
       margin-bottom: 11px;
     }
@@ -230,6 +244,12 @@
     margin: 0;
     flex-direction: column;
     background-image: url("../img/bonus-background-sm.jpg");
+    background-position: initial;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bonus-background-sm@2x.jpg");
+      background-size: cover;
+    }
 
     svg {
       margin-top: 58px;
