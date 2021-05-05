@@ -111,6 +111,8 @@
             <div class="slider__content">
               <div class="slider__slide slider__image-before">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/slider-before-large.webp 1x, img/slider-before-large@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider-before-small.webp 1x ,img/slider-before-small@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/slider-before-large.png 1x, img/slider-before-large@2x.png 2x">
                   <img src="img/slider-before-small.png" srcset="img/slider-before-small@2x.png 2x" width="311" height="232" alt="кот в начале диеты">
                 </picture>
@@ -118,6 +120,8 @@
               <div class="slider__slide slider__image-after">
                 <div class="slider__after-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/slider-after-large.webp 1x, img/slider-after-large@2x.webp 2x">
+                    <source type="image/webp" srcset="img/slider-after-small.webp 1x, img/slider-after-small@2x.webp 2x">
                     <source media="(min-width: 768px)" srcset="img/slider-after-large.png 1x, img/slider-after-large@2x.png 2x">
                     <img src="img/slider-after-small.png" srcset="img/slider-after-small@2x.png 2x" width="251" height="240" alt="кот после диеты">
                   </picture>
@@ -158,21 +162,21 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в контакте">
-                <svg width="23" height="16">
+                <svg width="23" height="16" role="img">
                   <use href="img/sprites/social-icons.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.facebook.com/htmlacademy" aria-label="Мы в instagram">
-                <svg width="20" height="20">
+                <svg width="20" height="20" role="img">
                   <use href="img/sprites/social-icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy" aria-label="Мы в facebook">
-                <svg width="22" height="22">
+                <svg width="22" height="22" role="img">
                   <use href="img/sprites/social-icons.svg#facebook"></use>
                 </svg>
               </a>
@@ -180,8 +184,8 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <svg width="27" height="34">
+          <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">HTML Academy
+            <svg width="27" height="34" role="img">
               <use href="img/sprites/copyright.svg#HTMLAcademy"></use>
             </svg>
           </a>
