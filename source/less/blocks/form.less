@@ -210,10 +210,6 @@
     border: 1px solid @basic-pink;
   }
 
-  &--error + svg * {
-    stroke: @basic-pink;
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -348,9 +344,19 @@
   border-color: @basic-dark-grey-2;
 }
 
+.form__input[type="email"] + svg *,
+.form__input[type="tel"] + svg {
+  stroke: @special-darkest-grey;
+}
+
 .form__input[type="email"]:focus + svg *,
 .form__input[type="tel"]:focus + svg {
   stroke: @basic-green;
+}
+
+.form__input--error[type="email"] + svg *,
+.form__input--error[type="tel"] + svg {
+  stroke: @basic-pink;
 }
 
 .form__extra .form__list {
