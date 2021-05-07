@@ -146,6 +146,7 @@
   color: @basic-black;
   text-transform: none;
   width: auto;
+  word-break: break-word;
 
   &::after {
     position: absolute;
@@ -321,9 +322,6 @@
     content: "";
     width: 30px;
     height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid @basic-dark-grey;
 
     @media (min-width: @tablet-width) {
