@@ -342,7 +342,7 @@
   border-color: @basic-dark-grey-2;
 }
 
-.form__input[type="email"] + svg *,
+/* .form__input[type="email"] + svg *,
 .form__input[type="tel"] + svg {
   stroke: @special-darkest-grey;
 }
@@ -355,6 +355,10 @@
 .form__input--error[type="email"] + svg *,
 .form__input--error[type="tel"] + svg {
   stroke: @basic-pink;
+} */
+
+.form__input--with-icon:focus + svg {
+  fill: @basic-green;
 }
 
 .form__extra .form__list {
