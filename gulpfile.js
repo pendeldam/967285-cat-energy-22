@@ -33,7 +33,7 @@ const server = (done) => {
     cors: true,
     notify: false,
     ui: false,
-    port:3035
+    port:5000
   });
   done();
 }
