@@ -64,7 +64,10 @@ const optimizeImages = () => {
 }
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
+  return gulp.src([
+    "source/img/**/*.{jpg,png}",
+    "!source/img/favicons/*.png"
+  ])
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("build/img"))
 }
