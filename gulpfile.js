@@ -45,8 +45,8 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src("source/js/*.js")
-    .pipe(terser())
-    .pipe(rename("script.min.js"))
+    .pipe(terser())    
+    .pipe(rename((path) => path.basename += ".min"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
@@ -84,8 +84,8 @@ const copyImages = () => {
     .pipe(gulp.dest("build/img"));
 }
 
-exports.images = optimizeImages;
-exports.images = copyImages;
+exports.optimizeImages = optimizeImages;
+exports.copyImages = copyImages;
 exports.createWebp = createWebp;
 exports.sprite = sprite;
 
@@ -137,7 +137,7 @@ const reload = done => {
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
-  gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
