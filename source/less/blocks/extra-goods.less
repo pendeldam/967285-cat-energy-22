@@ -201,6 +201,7 @@
 }
 
 .extra__bonus {
+  position: relative;
   min-height: 289px;
   margin: 40px 0 22px;
   display: flex;
@@ -212,13 +213,19 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/bonus.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 50px;
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/catalog/bonus-background-sm@2x.jpg");
     background-size: contain;
-  }
-
-  svg {
-    margin-bottom: 50px;
   }
 
   @media (min-width: @tablet-width) {
@@ -235,7 +242,7 @@
       background-size: contain;
     }
 
-    svg {
+    &::before {
       margin-bottom: 11px;
     }
   }
@@ -253,7 +260,7 @@
       background-size: cover;
     }
 
-    svg {
+    &::before {
       margin-top: 58px;
     }
   }

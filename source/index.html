@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/svg+xml" href="img/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="apple-mobile-web-app-title" content="Cat Energy">
     <meta name="application-name" content="Cat Energy">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header page-header--index">
@@ -48,9 +48,12 @@
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
           </div>
           <picture class="promo__image">
-            <source media="(min-width: 1280px)" srcset="img/can-desktop.png 1x, img/can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/can-tablet.jpg 1x, img/can-tablet@2x.jpg 2x">
-            <img src="img/can-mobile.png" srcset="img/can-mobile@2x.png 2x" alt="car energy pro">
+            <source type="image/webp" media="(min-width: 1280px)" srcset="img/promo/can-desktop.webp 1x, img/promo/can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/promo/can-tablet.webp 1x, img/promo/can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/promo/can-mobile.webp 1x, img/promo/can-mobile@2x.webp 2x">
+            <source media="(min-width: 1280px)" srcset="img/promo/can-desktop.png 1x, img/promo/can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/promo/can-tablet.jpg 1x, img/promo/can-tablet@2x.jpg 2x">
+            <img src="img/promo/can-mobile.png" srcset="img/promo/can-mobile@2x.png 2x" alt="car energy pro">
           </picture>
           <a class="button promo__button button--mob-s button--tab-l" href="form.html">Подобрать программу</a>
         </section>
@@ -61,12 +64,12 @@
         <h2 class="visually-hidden">Выбор программы</h2>
         <div class="plans__item plans__item--weight-loss">
           <h3 class="plans__title">Похудение</h3>
-          <p class="plans__text">Ваш кот весит больше собаки и почти утратил<br> способность лазить по деревьям? Пора на диету!<br> Cat Energy Slim поможет вашему питомцу<br> сбросить лишний вес.</p>
+          <p class="plans__text">Ваш кот весит больше собаки и почти утратил<br>&nbsp;способность лазить по деревьям? Пора на диету!<br>&nbsp;Cat Energy Slim поможет вашему питомцу<br>&nbsp;сбросить лишний вес.</p>
           <a class="plans__link" href="form.html">Каталог slim</a>
         </div>
         <div class="plans__item plans__item--weight-gain">
           <h3 class="plans__title">Набор массы</h3>
-          <p class="plans__text">Заработать авторитет среди дворовых котов<br> и даже собак? Серия Cat Energy Pro поможет<br> вашему коту нарастить необходимые<br> мышцы!</p>
+          <p class="plans__text">Заработать авторитет среди дворовых котов<br>&nbsp;и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые<br>&nbsp;мышцы!</p>
           <a class="plans__link" href="form.html">Каталог pro</a>
         </div>
       </section>
@@ -83,7 +86,7 @@
             <p class="features__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="features__item features__item--time">
-            <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
+            <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему<br>&nbsp;вашего питомца!</p>
           </li>
         </ul>
       </section>
@@ -91,7 +94,7 @@
         <div class="example__content wrapper">
           <div class="example__desc">
             <h2 class="example__title title">Живой пример</h2>
-            <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек<br> и по-прежнему спит по 16 часов в день.</p>
+            <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек<br>&nbsp;и по-прежнему спит по 16 часов в день.</p>
             <div class="example__stats">
               <div class="example__stat">
                 <p class="example__stat-value">5 кг</p>
@@ -111,19 +114,19 @@
             <div class="slider__content">
               <div class="slider__slide slider__image-before">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/slider-before-large.webp 1x, img/slider-before-large@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slider-before-small.webp 1x ,img/slider-before-small@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/slider-before-large.png 1x, img/slider-before-large@2x.png 2x">
-                  <img src="img/slider-before-small.png" srcset="img/slider-before-small@2x.png 2x" width="311" height="232" alt="кот в начале диеты">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/slider-before-large.webp 1x, img/slider/slider-before-large@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider/slider-before-small.webp 1x ,img/slider/slider-before-small@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/slider/slider-before-large.png 1x, img/slider/slider-before-large@2x.png 2x">
+                  <img src="img/slider/slider-before-small.png" srcset="img/slider/slider-before-small@2x.png 2x" width="311" height="232" alt="кот в начале диеты">
                 </picture>
               </div>
               <div class="slider__slide slider__image-after">
                 <div class="slider__after-wrapper">
                   <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/slider-after-large.webp 1x, img/slider-after-large@2x.webp 2x">
-                    <source type="image/webp" srcset="img/slider-after-small.webp 1x, img/slider-after-small@2x.webp 2x">
-                    <source media="(min-width: 768px)" srcset="img/slider-after-large.png 1x, img/slider-after-large@2x.png 2x">
-                    <img src="img/slider-after-small.png" srcset="img/slider-after-small@2x.png 2x" width="251" height="240" alt="кот после диеты">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/slider-after-large.webp 1x, img/slider/slider-after-large@2x.webp 2x">
+                    <source type="image/webp" srcset="img/slider/slider-after-small.webp 1x, img/slider/slider-after-small@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/slider/slider-after-large.png 1x, img/slider/slider-after-large@2x.png 2x">
+                    <img src="img/slider/slider-after-small.png" srcset="img/slider/slider-after-small@2x.png 2x" width="251" height="240" alt="кот после диеты">
                   </picture>
                 </div>
               </div>
@@ -146,18 +149,23 @@
             </div>
           </div>
         </div>
-        <picture>
-          <source media="(min-width: 1280px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="contacts__map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </picture>
+        <div class="contacts__map-wrapper">
+          <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003306!2d30.32085871633196!3d59.93871916905384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620842672540!5m2!1sru!2sru" width="320" height="360" style="border: none;" allowfullscreen="" loading="lazy"></iframe>
+          <picture>
+            <source type="image/webp" media="(min-width: 1280px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+            <source media="(min-width: 1280px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+            <img class="contacts__map" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__content wrapper">
         <a class="page-footer__logo logo">
           <svg width="128" height="24" role="img" aria-label="логотип Cat Energy">
-            <use href="img/sprites/icons.svg#logo"></use>
+            <use href="img/sprite.svg#cat-energy-logo-text"></use>
           </svg>
         </a>
         <div class="page-footer__social social">
@@ -165,21 +173,21 @@
             <li class="social__item">
               <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в контакте">
                 <svg width="23" height="16" role="img">
-                  <use href="img/sprites/icons.svg#vk"></use>
+                  <use href="img/sprite.svg#vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.facebook.com/htmlacademy" aria-label="Мы в instagram">
                 <svg width="20" height="20" role="img">
-                  <use href="img/sprites/icons.svg#instagram"></use>
+                  <use href="img/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy" aria-label="Мы в facebook">
                 <svg width="22" height="22" role="img">
-                  <use href="img/sprites/icons.svg#facebook"></use>
+                  <use href="img/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -188,13 +196,13 @@
         <div class="page-footer__copyright copyright">
           <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">HTML Academy
             <svg width="27" height="34" role="img">
-              <use href="img/sprites/icons.svg#HTMLAcademy"></use>
+              <use href="img/sprite.svg#htmlacademy-logo"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/main-nav.min.js"></script>
+    <script src="js/slider.min.js"></script>
   </body>
 </html>
