@@ -14,6 +14,8 @@
     <meta name="msapplication-config" content="browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -21,9 +23,9 @@
       <div class="page-header__top">
         <a class="page-header__logo logo" href="index.html">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="логотип">
+            <source media="(min-width: 1280px)" srcset="img/logo-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+            <img class="page-header__logo-image" src="img/logo-mobile.png" width="191" height="38" alt="логотип">
           </picture>
         </a>
         <nav class="main-nav main-nav--closed no-js">
@@ -86,7 +88,7 @@
             </fieldset>
           </div>
           <fieldset class="form__fieldset form__owner-contacts">
-            <legend class="form__legend">Контактные данные<br> (владельца кота)</legend>
+            <legend class="form__legend">Контактные данные<br>&nbsp;(владельца кота)</legend>
             <ul class="form__list form__wrapper">
               <li class="form__item">
                 <label class="form__label-email form__label" for="owner-email"><span>e-mail:</span><sup>&lowast;</sup>

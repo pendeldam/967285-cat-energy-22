@@ -26,10 +26,18 @@
 
   @media (min-width: @tablet-width) {
     padding: 68px 0 65px 52px;
+
+    &--weight-gain .plans__text {
+      width: 340px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding: 78px 50px 60px;
+
+    &--weight-gain .plans__text {
+      width: 445px;
+    }
   }
 
   &--weight-loss::before,
@@ -118,10 +126,6 @@
   padding-bottom: 22px;
   border-bottom: 1px solid @basic-light-grey;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
@@ -129,18 +133,10 @@
     padding-left: 0;
     border-bottom: none;
     width: 400px;
-
-    br {
-      display: block;
-    }
   }
 
   @media (min-width: @desktop-width) {
     width: auto;
-
-    br {
-      display: none;
-    }
   }
 }
 
