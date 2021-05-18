@@ -187,6 +187,14 @@
   }
 }
 
+.form__owner-contacts .form__legend::after {
+  left: 200px;
+
+  @media (min-width: @tablet-width) {
+    left: calc(100% + 40px);
+  }
+}
+
 .form__input {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
@@ -237,6 +245,7 @@
 }
 
 .form__label {
+  width: max-content;
   margin-right: 15px;
 }
 
