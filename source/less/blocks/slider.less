@@ -116,7 +116,7 @@
   align-items: center;
   z-index: 1;
   width: 228px;
-  margin-top: 28px;
+  margin-top: 25px;
 
 
   @media (min-width: @tablet-width) {
@@ -140,7 +140,7 @@
 
   &::-webkit-slider-thumb {
     appearance: none;
-    width: 31px;
+    width: 33px;
     height: 6px;
     border-radius: 50px;
     background-color: @basic-green;
@@ -273,8 +273,16 @@
   @media (min-width: @tablet-width) {
     margin-left: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .slider__button:last-child {
   margin-right: 11px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 20px;
+  }
 }
